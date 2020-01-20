@@ -6,17 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/CentralController.h
-BWAPI.h
--
+/Users/ryan/projects/starcraft_ai/HaliBot/bot/src/Classes/Units/UnitInfo/UnitInfo.cpp
+UnitInfo.h
+/Users/ryan/projects/starcraft_ai/HaliBot/bot/src/Classes/Units/UnitInfo/UnitInfo.h
 
-/Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/Dll.cpp
+/Users/ryan/projects/starcraft_ai/HaliBot/bot/src/Classes/Units/UnitInfo/UnitInfo.h
 BWAPI.h
 -
-Windows.h
--
-CentralController.h
-/Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/CentralController.h
 
 /usr/local/include/BWAPI.h
 BWAPI/InterfaceEvent.h

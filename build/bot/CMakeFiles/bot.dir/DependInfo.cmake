@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/CentralController.cpp" "/Users/ryan/projects/starcraft_ai/HaliBot/build/bot/CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.o"
-  "/Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/Dll.cpp" "/Users/ryan/projects/starcraft_ai/HaliBot/build/bot/CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.o"
-  "/Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/UnitInfo/UnitInfo.cpp" "/Users/ryan/projects/starcraft_ai/HaliBot/build/bot/CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.o"
+  "/Users/ryan/projects/starcraft_ai/HaliBot/bot/src/Classes/Units/UnitInfo/UnitInfo.cpp" "/Users/ryan/projects/starcraft_ai/HaliBot/build/bot/CMakeFiles/bot.dir/src/Classes/Units/UnitInfo/UnitInfo.cpp.o"
+  "/Users/ryan/projects/starcraft_ai/HaliBot/bot/src/Controllers/CentralController/CentralController.cpp" "/Users/ryan/projects/starcraft_ai/HaliBot/build/bot/CMakeFiles/bot.dir/src/Controllers/CentralController/CentralController.cpp.o"
+  "/Users/ryan/projects/starcraft_ai/HaliBot/bot/src/Controllers/CentralController/Dll.cpp" "/Users/ryan/projects/starcraft_ai/HaliBot/build/bot/CMakeFiles/bot.dir/src/Controllers/CentralController/Dll.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

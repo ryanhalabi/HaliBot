@@ -125,86 +125,86 @@ bot/fast:
 	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/build
 .PHONY : bot/fast
 
-Source/CentralController/CentralController.o: Source/CentralController/CentralController.cpp.o
+src/Classes/Units/UnitInfo/UnitInfo.o: src/Classes/Units/UnitInfo/UnitInfo.cpp.o
 
-.PHONY : Source/CentralController/CentralController.o
-
-# target to build an object file
-Source/CentralController/CentralController.cpp.o:
-	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.o
-.PHONY : Source/CentralController/CentralController.cpp.o
-
-Source/CentralController/CentralController.i: Source/CentralController/CentralController.cpp.i
-
-.PHONY : Source/CentralController/CentralController.i
-
-# target to preprocess a source file
-Source/CentralController/CentralController.cpp.i:
-	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.i
-.PHONY : Source/CentralController/CentralController.cpp.i
-
-Source/CentralController/CentralController.s: Source/CentralController/CentralController.cpp.s
-
-.PHONY : Source/CentralController/CentralController.s
-
-# target to generate assembly for a file
-Source/CentralController/CentralController.cpp.s:
-	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.s
-.PHONY : Source/CentralController/CentralController.cpp.s
-
-Source/CentralController/Dll.o: Source/CentralController/Dll.cpp.o
-
-.PHONY : Source/CentralController/Dll.o
+.PHONY : src/Classes/Units/UnitInfo/UnitInfo.o
 
 # target to build an object file
-Source/CentralController/Dll.cpp.o:
-	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.o
-.PHONY : Source/CentralController/Dll.cpp.o
+src/Classes/Units/UnitInfo/UnitInfo.cpp.o:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/src/Classes/Units/UnitInfo/UnitInfo.cpp.o
+.PHONY : src/Classes/Units/UnitInfo/UnitInfo.cpp.o
 
-Source/CentralController/Dll.i: Source/CentralController/Dll.cpp.i
+src/Classes/Units/UnitInfo/UnitInfo.i: src/Classes/Units/UnitInfo/UnitInfo.cpp.i
 
-.PHONY : Source/CentralController/Dll.i
+.PHONY : src/Classes/Units/UnitInfo/UnitInfo.i
 
 # target to preprocess a source file
-Source/CentralController/Dll.cpp.i:
-	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.i
-.PHONY : Source/CentralController/Dll.cpp.i
+src/Classes/Units/UnitInfo/UnitInfo.cpp.i:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/src/Classes/Units/UnitInfo/UnitInfo.cpp.i
+.PHONY : src/Classes/Units/UnitInfo/UnitInfo.cpp.i
 
-Source/CentralController/Dll.s: Source/CentralController/Dll.cpp.s
+src/Classes/Units/UnitInfo/UnitInfo.s: src/Classes/Units/UnitInfo/UnitInfo.cpp.s
 
-.PHONY : Source/CentralController/Dll.s
+.PHONY : src/Classes/Units/UnitInfo/UnitInfo.s
 
 # target to generate assembly for a file
-Source/CentralController/Dll.cpp.s:
-	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.s
-.PHONY : Source/CentralController/Dll.cpp.s
+src/Classes/Units/UnitInfo/UnitInfo.cpp.s:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/src/Classes/Units/UnitInfo/UnitInfo.cpp.s
+.PHONY : src/Classes/Units/UnitInfo/UnitInfo.cpp.s
 
-Source/UnitInfo/UnitInfo.o: Source/UnitInfo/UnitInfo.cpp.o
+src/Controllers/CentralController/CentralController.o: src/Controllers/CentralController/CentralController.cpp.o
 
-.PHONY : Source/UnitInfo/UnitInfo.o
+.PHONY : src/Controllers/CentralController/CentralController.o
 
 # target to build an object file
-Source/UnitInfo/UnitInfo.cpp.o:
-	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.o
-.PHONY : Source/UnitInfo/UnitInfo.cpp.o
+src/Controllers/CentralController/CentralController.cpp.o:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/src/Controllers/CentralController/CentralController.cpp.o
+.PHONY : src/Controllers/CentralController/CentralController.cpp.o
 
-Source/UnitInfo/UnitInfo.i: Source/UnitInfo/UnitInfo.cpp.i
+src/Controllers/CentralController/CentralController.i: src/Controllers/CentralController/CentralController.cpp.i
 
-.PHONY : Source/UnitInfo/UnitInfo.i
+.PHONY : src/Controllers/CentralController/CentralController.i
 
 # target to preprocess a source file
-Source/UnitInfo/UnitInfo.cpp.i:
-	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.i
-.PHONY : Source/UnitInfo/UnitInfo.cpp.i
+src/Controllers/CentralController/CentralController.cpp.i:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/src/Controllers/CentralController/CentralController.cpp.i
+.PHONY : src/Controllers/CentralController/CentralController.cpp.i
 
-Source/UnitInfo/UnitInfo.s: Source/UnitInfo/UnitInfo.cpp.s
+src/Controllers/CentralController/CentralController.s: src/Controllers/CentralController/CentralController.cpp.s
 
-.PHONY : Source/UnitInfo/UnitInfo.s
+.PHONY : src/Controllers/CentralController/CentralController.s
 
 # target to generate assembly for a file
-Source/UnitInfo/UnitInfo.cpp.s:
-	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.s
-.PHONY : Source/UnitInfo/UnitInfo.cpp.s
+src/Controllers/CentralController/CentralController.cpp.s:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/src/Controllers/CentralController/CentralController.cpp.s
+.PHONY : src/Controllers/CentralController/CentralController.cpp.s
+
+src/Controllers/CentralController/Dll.o: src/Controllers/CentralController/Dll.cpp.o
+
+.PHONY : src/Controllers/CentralController/Dll.o
+
+# target to build an object file
+src/Controllers/CentralController/Dll.cpp.o:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/src/Controllers/CentralController/Dll.cpp.o
+.PHONY : src/Controllers/CentralController/Dll.cpp.o
+
+src/Controllers/CentralController/Dll.i: src/Controllers/CentralController/Dll.cpp.i
+
+.PHONY : src/Controllers/CentralController/Dll.i
+
+# target to preprocess a source file
+src/Controllers/CentralController/Dll.cpp.i:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/src/Controllers/CentralController/Dll.cpp.i
+.PHONY : src/Controllers/CentralController/Dll.cpp.i
+
+src/Controllers/CentralController/Dll.s: src/Controllers/CentralController/Dll.cpp.s
+
+.PHONY : src/Controllers/CentralController/Dll.s
+
+# target to generate assembly for a file
+src/Controllers/CentralController/Dll.cpp.s:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/src/Controllers/CentralController/Dll.cpp.s
+.PHONY : src/Controllers/CentralController/Dll.cpp.s
 
 # Help Target
 help:
@@ -215,15 +215,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... bot"
-	@echo "... Source/CentralController/CentralController.o"
-	@echo "... Source/CentralController/CentralController.i"
-	@echo "... Source/CentralController/CentralController.s"
-	@echo "... Source/CentralController/Dll.o"
-	@echo "... Source/CentralController/Dll.i"
-	@echo "... Source/CentralController/Dll.s"
-	@echo "... Source/UnitInfo/UnitInfo.o"
-	@echo "... Source/UnitInfo/UnitInfo.i"
-	@echo "... Source/UnitInfo/UnitInfo.s"
+	@echo "... src/Classes/Units/UnitInfo/UnitInfo.o"
+	@echo "... src/Classes/Units/UnitInfo/UnitInfo.i"
+	@echo "... src/Classes/Units/UnitInfo/UnitInfo.s"
+	@echo "... src/Controllers/CentralController/CentralController.o"
+	@echo "... src/Controllers/CentralController/CentralController.i"
+	@echo "... src/Controllers/CentralController/CentralController.s"
+	@echo "... src/Controllers/CentralController/Dll.o"
+	@echo "... src/Controllers/CentralController/Dll.i"
+	@echo "... src/Controllers/CentralController/Dll.s"
 .PHONY : help
 
 
