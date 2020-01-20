@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -dynamiclib -Wl,-headerpad_max_install_names  -o ../lib/libbot.dylib -install_name @rpath/libbot.dylib CMakeFiles/bot.dir/Source/Dll.cpp.o CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.o  -Wl,-rpath,/usr/local/lib /usr/local/lib/libBWAPILIB.dylib 

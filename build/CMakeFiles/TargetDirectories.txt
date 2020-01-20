@@ -1,0 +1,5 @@
+/Users/ryan/starcraft_ai/bot/build/CMakeFiles/rebuild_cache.dir
+/Users/ryan/starcraft_ai/bot/build/CMakeFiles/edit_cache.dir
+/Users/ryan/starcraft_ai/bot/build/bot/CMakeFiles/rebuild_cache.dir
+/Users/ryan/starcraft_ai/bot/build/bot/CMakeFiles/edit_cache.dir
+/Users/ryan/starcraft_ai/bot/build/bot/CMakeFiles/bot.dir
