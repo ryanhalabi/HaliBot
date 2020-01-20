@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.16.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ryan/starcraft_ai/bot
+CMAKE_SOURCE_DIR = /Users/ryan/projects/starcraft_ai/HaliBot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ryan/starcraft_ai/bot/build
+CMAKE_BINARY_DIR = /Users/ryan/projects/starcraft_ai/HaliBot/build
 
 # Include any dependencies generated for this target.
 include bot/CMakeFiles/bot.dir/depend.make
@@ -57,47 +57,62 @@ include bot/CMakeFiles/bot.dir/progress.make
 # Include the compile flags for this target's objects.
 include bot/CMakeFiles/bot.dir/flags.make
 
-bot/CMakeFiles/bot.dir/Source/Dll.cpp.o: bot/CMakeFiles/bot.dir/flags.make
-bot/CMakeFiles/bot.dir/Source/Dll.cpp.o: ../bot/Source/Dll.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ryan/starcraft_ai/bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object bot/CMakeFiles/bot.dir/Source/Dll.cpp.o"
-	cd /Users/ryan/starcraft_ai/bot/build/bot && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bot.dir/Source/Dll.cpp.o -c /Users/ryan/starcraft_ai/bot/bot/Source/Dll.cpp
+bot/CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.o: bot/CMakeFiles/bot.dir/flags.make
+bot/CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.o: ../bot/Source/CentralController/CentralController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ryan/projects/starcraft_ai/HaliBot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object bot/CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.o"
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build/bot && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.o -c /Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/CentralController.cpp
 
-bot/CMakeFiles/bot.dir/Source/Dll.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bot.dir/Source/Dll.cpp.i"
-	cd /Users/ryan/starcraft_ai/bot/build/bot && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryan/starcraft_ai/bot/bot/Source/Dll.cpp > CMakeFiles/bot.dir/Source/Dll.cpp.i
+bot/CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.i"
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build/bot && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/CentralController.cpp > CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.i
 
-bot/CMakeFiles/bot.dir/Source/Dll.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bot.dir/Source/Dll.cpp.s"
-	cd /Users/ryan/starcraft_ai/bot/build/bot && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryan/starcraft_ai/bot/bot/Source/Dll.cpp -o CMakeFiles/bot.dir/Source/Dll.cpp.s
+bot/CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.s"
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build/bot && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/CentralController.cpp -o CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.s
 
-bot/CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.o: bot/CMakeFiles/bot.dir/flags.make
-bot/CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.o: ../bot/Source/ExampleAIModule.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ryan/starcraft_ai/bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object bot/CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.o"
-	cd /Users/ryan/starcraft_ai/bot/build/bot && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.o -c /Users/ryan/starcraft_ai/bot/bot/Source/ExampleAIModule.cpp
+bot/CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.o: bot/CMakeFiles/bot.dir/flags.make
+bot/CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.o: ../bot/Source/CentralController/Dll.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ryan/projects/starcraft_ai/HaliBot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object bot/CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.o"
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build/bot && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.o -c /Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/Dll.cpp
 
-bot/CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.i"
-	cd /Users/ryan/starcraft_ai/bot/build/bot && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryan/starcraft_ai/bot/bot/Source/ExampleAIModule.cpp > CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.i
+bot/CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.i"
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build/bot && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/Dll.cpp > CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.i
 
-bot/CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.s"
-	cd /Users/ryan/starcraft_ai/bot/build/bot && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryan/starcraft_ai/bot/bot/Source/ExampleAIModule.cpp -o CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.s
+bot/CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.s"
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build/bot && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/Dll.cpp -o CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.s
+
+bot/CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.o: bot/CMakeFiles/bot.dir/flags.make
+bot/CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.o: ../bot/Source/UnitInfo/UnitInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ryan/projects/starcraft_ai/HaliBot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object bot/CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.o"
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build/bot && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.o -c /Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/UnitInfo/UnitInfo.cpp
+
+bot/CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.i"
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build/bot && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/UnitInfo/UnitInfo.cpp > CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.i
+
+bot/CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.s"
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build/bot && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/UnitInfo/UnitInfo.cpp -o CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.s
 
 # Object files for target bot
 bot_OBJECTS = \
-"CMakeFiles/bot.dir/Source/Dll.cpp.o" \
-"CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.o"
+"CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.o" \
+"CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.o" \
+"CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.o"
 
 # External object files for target bot
 bot_EXTERNAL_OBJECTS =
 
-lib/libbot.dylib: bot/CMakeFiles/bot.dir/Source/Dll.cpp.o
-lib/libbot.dylib: bot/CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.o
+lib/libbot.dylib: bot/CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.o
+lib/libbot.dylib: bot/CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.o
+lib/libbot.dylib: bot/CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.o
 lib/libbot.dylib: bot/CMakeFiles/bot.dir/build.make
 lib/libbot.dylib: /usr/local/lib/libBWAPILIB.dylib
 lib/libbot.dylib: bot/CMakeFiles/bot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ryan/starcraft_ai/bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library ../lib/libbot.dylib"
-	cd /Users/ryan/starcraft_ai/bot/build/bot && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bot.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ryan/projects/starcraft_ai/HaliBot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../lib/libbot.dylib"
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build/bot && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bot.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 bot/CMakeFiles/bot.dir/build: lib/libbot.dylib
@@ -105,10 +120,10 @@ bot/CMakeFiles/bot.dir/build: lib/libbot.dylib
 .PHONY : bot/CMakeFiles/bot.dir/build
 
 bot/CMakeFiles/bot.dir/clean:
-	cd /Users/ryan/starcraft_ai/bot/build/bot && $(CMAKE_COMMAND) -P CMakeFiles/bot.dir/cmake_clean.cmake
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build/bot && $(CMAKE_COMMAND) -P CMakeFiles/bot.dir/cmake_clean.cmake
 .PHONY : bot/CMakeFiles/bot.dir/clean
 
 bot/CMakeFiles/bot.dir/depend:
-	cd /Users/ryan/starcraft_ai/bot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ryan/starcraft_ai/bot /Users/ryan/starcraft_ai/bot/bot /Users/ryan/starcraft_ai/bot/build /Users/ryan/starcraft_ai/bot/build/bot /Users/ryan/starcraft_ai/bot/build/bot/CMakeFiles/bot.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ryan/projects/starcraft_ai/HaliBot /Users/ryan/projects/starcraft_ai/HaliBot/bot /Users/ryan/projects/starcraft_ai/HaliBot/build /Users/ryan/projects/starcraft_ai/HaliBot/build/bot /Users/ryan/projects/starcraft_ai/HaliBot/build/bot/CMakeFiles/bot.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bot/CMakeFiles/bot.dir/depend
 

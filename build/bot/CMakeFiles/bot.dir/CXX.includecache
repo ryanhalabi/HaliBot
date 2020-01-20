@@ -6,15 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/ryan/starcraft_ai/bot/bot/Source/ExampleAIModule.cpp
-ExampleAIModule.h
-/Users/ryan/starcraft_ai/bot/bot/Source/ExampleAIModule.h
-iostream
--
-
-/Users/ryan/starcraft_ai/bot/bot/Source/ExampleAIModule.h
+/Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/CentralController.h
 BWAPI.h
 -
+
+/Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/Dll.cpp
+BWAPI.h
+-
+Windows.h
+-
+CentralController.h
+/Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/CentralController.h
 
 /usr/local/include/BWAPI.h
 BWAPI/InterfaceEvent.h

@@ -6,7 +6,7 @@
 #define DLLEXPORT
 #endif
 
-#include "ExampleAIModule.h"
+#include "CentralController.h"
 
 extern "C" DLLEXPORT void gameInit(BWAPI::Game* game) { BWAPI::BroodwarPtr = game; }
 #ifdef _WIN32
@@ -25,5 +25,5 @@ BOOL APIENTRY DllMain( HANDLE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
 
 extern "C" DLLEXPORT BWAPI::AIModule* newAIModule()
 {
-  return new ExampleAIModule();
+  return new CentralController();
 }

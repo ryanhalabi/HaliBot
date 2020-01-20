@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.16.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ryan/starcraft_ai/bot
+CMAKE_SOURCE_DIR = /Users/ryan/projects/starcraft_ai/HaliBot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ryan/starcraft_ai/bot/build
+CMAKE_BINARY_DIR = /Users/ryan/projects/starcraft_ai/HaliBot/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/ryan/starcraft_ai/bot/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ryan/starcraft_ai/bot/build/CMakeFiles /Users/ryan/starcraft_ai/bot/build/bot/CMakeFiles/progress.marks
-	cd /Users/ryan/starcraft_ai/bot/build && $(MAKE) -f CMakeFiles/Makefile2 bot/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryan/starcraft_ai/bot/build/CMakeFiles 0
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ryan/projects/starcraft_ai/HaliBot/build/CMakeFiles /Users/ryan/projects/starcraft_ai/HaliBot/build/bot/CMakeFiles/progress.marks
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f CMakeFiles/Makefile2 bot/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryan/projects/starcraft_ai/HaliBot/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/ryan/starcraft_ai/bot/build && $(MAKE) -f CMakeFiles/Makefile2 bot/clean
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f CMakeFiles/Makefile2 bot/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/ryan/starcraft_ai/bot/build && $(MAKE) -f CMakeFiles/Makefile2 bot/preinstall
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f CMakeFiles/Makefile2 bot/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/ryan/starcraft_ai/bot/build && $(MAKE) -f CMakeFiles/Makefile2 bot/preinstall
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f CMakeFiles/Makefile2 bot/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/ryan/starcraft_ai/bot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 bot/CMakeFiles/bot.dir/rule:
-	cd /Users/ryan/starcraft_ai/bot/build && $(MAKE) -f CMakeFiles/Makefile2 bot/CMakeFiles/bot.dir/rule
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f CMakeFiles/Makefile2 bot/CMakeFiles/bot.dir/rule
 .PHONY : bot/CMakeFiles/bot.dir/rule
 
 # Convenience name for target.
@@ -122,62 +122,89 @@ bot: bot/CMakeFiles/bot.dir/rule
 
 # fast build rule for target.
 bot/fast:
-	cd /Users/ryan/starcraft_ai/bot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/build
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/build
 .PHONY : bot/fast
 
-Source/Dll.o: Source/Dll.cpp.o
+Source/CentralController/CentralController.o: Source/CentralController/CentralController.cpp.o
 
-.PHONY : Source/Dll.o
-
-# target to build an object file
-Source/Dll.cpp.o:
-	cd /Users/ryan/starcraft_ai/bot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/Dll.cpp.o
-.PHONY : Source/Dll.cpp.o
-
-Source/Dll.i: Source/Dll.cpp.i
-
-.PHONY : Source/Dll.i
-
-# target to preprocess a source file
-Source/Dll.cpp.i:
-	cd /Users/ryan/starcraft_ai/bot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/Dll.cpp.i
-.PHONY : Source/Dll.cpp.i
-
-Source/Dll.s: Source/Dll.cpp.s
-
-.PHONY : Source/Dll.s
-
-# target to generate assembly for a file
-Source/Dll.cpp.s:
-	cd /Users/ryan/starcraft_ai/bot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/Dll.cpp.s
-.PHONY : Source/Dll.cpp.s
-
-Source/ExampleAIModule.o: Source/ExampleAIModule.cpp.o
-
-.PHONY : Source/ExampleAIModule.o
+.PHONY : Source/CentralController/CentralController.o
 
 # target to build an object file
-Source/ExampleAIModule.cpp.o:
-	cd /Users/ryan/starcraft_ai/bot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.o
-.PHONY : Source/ExampleAIModule.cpp.o
+Source/CentralController/CentralController.cpp.o:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.o
+.PHONY : Source/CentralController/CentralController.cpp.o
 
-Source/ExampleAIModule.i: Source/ExampleAIModule.cpp.i
+Source/CentralController/CentralController.i: Source/CentralController/CentralController.cpp.i
 
-.PHONY : Source/ExampleAIModule.i
+.PHONY : Source/CentralController/CentralController.i
 
 # target to preprocess a source file
-Source/ExampleAIModule.cpp.i:
-	cd /Users/ryan/starcraft_ai/bot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.i
-.PHONY : Source/ExampleAIModule.cpp.i
+Source/CentralController/CentralController.cpp.i:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.i
+.PHONY : Source/CentralController/CentralController.cpp.i
 
-Source/ExampleAIModule.s: Source/ExampleAIModule.cpp.s
+Source/CentralController/CentralController.s: Source/CentralController/CentralController.cpp.s
 
-.PHONY : Source/ExampleAIModule.s
+.PHONY : Source/CentralController/CentralController.s
 
 # target to generate assembly for a file
-Source/ExampleAIModule.cpp.s:
-	cd /Users/ryan/starcraft_ai/bot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.s
-.PHONY : Source/ExampleAIModule.cpp.s
+Source/CentralController/CentralController.cpp.s:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.s
+.PHONY : Source/CentralController/CentralController.cpp.s
+
+Source/CentralController/Dll.o: Source/CentralController/Dll.cpp.o
+
+.PHONY : Source/CentralController/Dll.o
+
+# target to build an object file
+Source/CentralController/Dll.cpp.o:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.o
+.PHONY : Source/CentralController/Dll.cpp.o
+
+Source/CentralController/Dll.i: Source/CentralController/Dll.cpp.i
+
+.PHONY : Source/CentralController/Dll.i
+
+# target to preprocess a source file
+Source/CentralController/Dll.cpp.i:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.i
+.PHONY : Source/CentralController/Dll.cpp.i
+
+Source/CentralController/Dll.s: Source/CentralController/Dll.cpp.s
+
+.PHONY : Source/CentralController/Dll.s
+
+# target to generate assembly for a file
+Source/CentralController/Dll.cpp.s:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.s
+.PHONY : Source/CentralController/Dll.cpp.s
+
+Source/UnitInfo/UnitInfo.o: Source/UnitInfo/UnitInfo.cpp.o
+
+.PHONY : Source/UnitInfo/UnitInfo.o
+
+# target to build an object file
+Source/UnitInfo/UnitInfo.cpp.o:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.o
+.PHONY : Source/UnitInfo/UnitInfo.cpp.o
+
+Source/UnitInfo/UnitInfo.i: Source/UnitInfo/UnitInfo.cpp.i
+
+.PHONY : Source/UnitInfo/UnitInfo.i
+
+# target to preprocess a source file
+Source/UnitInfo/UnitInfo.cpp.i:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.i
+.PHONY : Source/UnitInfo/UnitInfo.cpp.i
+
+Source/UnitInfo/UnitInfo.s: Source/UnitInfo/UnitInfo.cpp.s
+
+.PHONY : Source/UnitInfo/UnitInfo.s
+
+# target to generate assembly for a file
+Source/UnitInfo/UnitInfo.cpp.s:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.s
+.PHONY : Source/UnitInfo/UnitInfo.cpp.s
 
 # Help Target
 help:
@@ -188,12 +215,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... bot"
-	@echo "... Source/Dll.o"
-	@echo "... Source/Dll.i"
-	@echo "... Source/Dll.s"
-	@echo "... Source/ExampleAIModule.o"
-	@echo "... Source/ExampleAIModule.i"
-	@echo "... Source/ExampleAIModule.s"
+	@echo "... Source/CentralController/CentralController.o"
+	@echo "... Source/CentralController/CentralController.i"
+	@echo "... Source/CentralController/CentralController.s"
+	@echo "... Source/CentralController/Dll.o"
+	@echo "... Source/CentralController/Dll.i"
+	@echo "... Source/CentralController/Dll.s"
+	@echo "... Source/UnitInfo/UnitInfo.o"
+	@echo "... Source/UnitInfo/UnitInfo.i"
+	@echo "... Source/UnitInfo/UnitInfo.s"
 .PHONY : help
 
 
@@ -205,6 +235,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/ryan/starcraft_ai/bot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/ryan/projects/starcraft_ai/HaliBot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

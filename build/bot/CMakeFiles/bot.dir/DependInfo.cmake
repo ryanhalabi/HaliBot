@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/ryan/starcraft_ai/bot/bot/Source/Dll.cpp" "/Users/ryan/starcraft_ai/bot/build/bot/CMakeFiles/bot.dir/Source/Dll.cpp.o"
-  "/Users/ryan/starcraft_ai/bot/bot/Source/ExampleAIModule.cpp" "/Users/ryan/starcraft_ai/bot/build/bot/CMakeFiles/bot.dir/Source/ExampleAIModule.cpp.o"
+  "/Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/CentralController.cpp" "/Users/ryan/projects/starcraft_ai/HaliBot/build/bot/CMakeFiles/bot.dir/Source/CentralController/CentralController.cpp.o"
+  "/Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/CentralController/Dll.cpp" "/Users/ryan/projects/starcraft_ai/HaliBot/build/bot/CMakeFiles/bot.dir/Source/CentralController/Dll.cpp.o"
+  "/Users/ryan/projects/starcraft_ai/HaliBot/bot/Source/UnitInfo/UnitInfo.cpp" "/Users/ryan/projects/starcraft_ai/HaliBot/build/bot/CMakeFiles/bot.dir/Source/UnitInfo/UnitInfo.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /Users/ryan/projects/starcraft_ai/HaliBot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ryan/projects/starcraft_ai/HaliBot/build
+CMAKE_BINARY_DIR = /Users/ryan/projects/starcraft_ai/HaliBot
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryan/projects/starcraft_ai/HaliBot/build/CMakeFiles /Users/ryan/projects/starcraft_ai/HaliBot/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryan/projects/starcraft_ai/HaliBot/build/CMakeFiles 0
+	cd /Users/ryan/projects/starcraft_ai/HaliBot && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ryan/projects/starcraft_ai/HaliBot/CMakeFiles /Users/ryan/projects/starcraft_ai/HaliBot/bot/CMakeFiles/progress.marks
+	cd /Users/ryan/projects/starcraft_ai/HaliBot && $(MAKE) -f CMakeFiles/Makefile2 bot/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryan/projects/starcraft_ai/HaliBot/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Users/ryan/projects/starcraft_ai/HaliBot && $(MAKE) -f CMakeFiles/Makefile2 bot/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,31 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/ryan/projects/starcraft_ai/HaliBot && $(MAKE) -f CMakeFiles/Makefile2 bot/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/ryan/projects/starcraft_ai/HaliBot && $(MAKE) -f CMakeFiles/Makefile2 bot/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/ryan/projects/starcraft_ai/HaliBot && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named bot
+# Convenience name for target.
+bot/CMakeFiles/bot.dir/rule:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot && $(MAKE) -f CMakeFiles/Makefile2 bot/CMakeFiles/bot.dir/rule
+.PHONY : bot/CMakeFiles/bot.dir/rule
 
-# Build rule for target.
-bot: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bot
+# Convenience name for target.
+bot: bot/CMakeFiles/bot.dir/rule
+
 .PHONY : bot
 
 # fast build rule for target.
 bot/fast:
-	$(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/build
+	cd /Users/ryan/projects/starcraft_ai/HaliBot && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/build
 .PHONY : bot/fast
+
+Source/main/main.o: Source/main/main.cpp.o
+
+.PHONY : Source/main/main.o
+
+# target to build an object file
+Source/main/main.cpp.o:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/main/main.cpp.o
+.PHONY : Source/main/main.cpp.o
+
+Source/main/main.i: Source/main/main.cpp.i
+
+.PHONY : Source/main/main.i
+
+# target to preprocess a source file
+Source/main/main.cpp.i:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/main/main.cpp.i
+.PHONY : Source/main/main.cpp.i
+
+Source/main/main.s: Source/main/main.cpp.s
+
+.PHONY : Source/main/main.s
+
+# target to generate assembly for a file
+Source/main/main.cpp.s:
+	cd /Users/ryan/projects/starcraft_ai/HaliBot && $(MAKE) -f bot/CMakeFiles/bot.dir/build.make bot/CMakeFiles/bot.dir/Source/main/main.cpp.s
+.PHONY : Source/main/main.cpp.s
 
 # Help Target
 help:
@@ -132,6 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... bot"
+	@echo "... Source/main/main.o"
+	@echo "... Source/main/main.i"
+	@echo "... Source/main/main.s"
 .PHONY : help
 
 
@@ -143,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/ryan/projects/starcraft_ai/HaliBot && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

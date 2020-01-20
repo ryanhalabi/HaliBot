@@ -1,10 +1,10 @@
-#include "ExampleAIModule.h"
+#include "CentralController.h"
 #include <iostream>
 
 using namespace BWAPI;
 using namespace Filter;
 
-void ExampleAIModule::onStart()
+void CentralController::onStart()
 {
   // Hello World!
   Broodwar->sendText("HIIIIIII Hello world!");
@@ -50,7 +50,7 @@ void ExampleAIModule::onStart()
 
 }
 
-void ExampleAIModule::onEnd(bool isWinner)
+void CentralController::onEnd(bool isWinner)
 {
   // Called when the game ends
   if ( isWinner )
@@ -59,7 +59,7 @@ void ExampleAIModule::onEnd(bool isWinner)
   }
 }
 
-void ExampleAIModule::onFrame()
+void CentralController::onFrame()
 {
   // Called once every game frame
 
@@ -191,7 +191,7 @@ void ExampleAIModule::onFrame()
   } // closure: unit iterator
 }
 
-void ExampleAIModule::onSendText(std::string text)
+void CentralController::onSendText(std::string text)
 {
 
   // Send the text to the game if it is not being processed.
@@ -203,20 +203,20 @@ void ExampleAIModule::onSendText(std::string text)
 
 }
 
-void ExampleAIModule::onReceiveText(BWAPI::Player player, std::string text)
+void CentralController::onReceiveText(BWAPI::Player player, std::string text)
 {
   // Parse the received text
   Broodwar << player->getName() << " said \"" << text << "\"" << std::endl;
 }
 
-void ExampleAIModule::onPlayerLeft(BWAPI::Player player)
+void CentralController::onPlayerLeft(BWAPI::Player player)
 {
   // Interact verbally with the other players in the game by
   // announcing that the other player has left.
   Broodwar->sendText("Goodbye %s!", player->getName().c_str());
 }
 
-void ExampleAIModule::onNukeDetect(BWAPI::Position target)
+void CentralController::onNukeDetect(BWAPI::Position target)
 {
 
   // Check if the target is a valid position
@@ -234,23 +234,23 @@ void ExampleAIModule::onNukeDetect(BWAPI::Position target)
   // You can also retrieve all the nuclear missile targets using Broodwar->getNukeDots()!
 }
 
-void ExampleAIModule::onUnitDiscover(BWAPI::Unit unit)
+void CentralController::onUnitDiscover(BWAPI::Unit unit)
 {
 }
 
-void ExampleAIModule::onUnitEvade(BWAPI::Unit unit)
+void CentralController::onUnitEvade(BWAPI::Unit unit)
 {
 }
 
-void ExampleAIModule::onUnitShow(BWAPI::Unit unit)
+void CentralController::onUnitShow(BWAPI::Unit unit)
 {
 }
 
-void ExampleAIModule::onUnitHide(BWAPI::Unit unit)
+void CentralController::onUnitHide(BWAPI::Unit unit)
 {
 }
 
-void ExampleAIModule::onUnitCreate(BWAPI::Unit unit)
+void CentralController::onUnitCreate(BWAPI::Unit unit)
 {
   if ( Broodwar->isReplay() )
   {
@@ -265,11 +265,11 @@ void ExampleAIModule::onUnitCreate(BWAPI::Unit unit)
   }
 }
 
-void ExampleAIModule::onUnitDestroy(BWAPI::Unit unit)
+void CentralController::onUnitDestroy(BWAPI::Unit unit)
 {
 }
 
-void ExampleAIModule::onUnitMorph(BWAPI::Unit unit)
+void CentralController::onUnitMorph(BWAPI::Unit unit)
 {
   if ( Broodwar->isReplay() )
   {
@@ -284,15 +284,15 @@ void ExampleAIModule::onUnitMorph(BWAPI::Unit unit)
   }
 }
 
-void ExampleAIModule::onUnitRenegade(BWAPI::Unit unit)
+void CentralController::onUnitRenegade(BWAPI::Unit unit)
 {
 }
 
-void ExampleAIModule::onSaveGame(std::string gameName)
+void CentralController::onSaveGame(std::string gameName)
 {
   Broodwar << "The game was saved to \"" << gameName << "\"" << std::endl;
 }
 
-void ExampleAIModule::onUnitComplete(BWAPI::Unit unit)
+void CentralController::onUnitComplete(BWAPI::Unit unit)
 {
 }

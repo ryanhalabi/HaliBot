@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/Users/ryan/projects/starcraft_ai/HaliBot")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/ryan/projects/starcraft_ai/HaliBot/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/ryan/projects/starcraft_ai/HaliBot")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)
